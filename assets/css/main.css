@@ -1,0 +1,441 @@
+
+.header {
+    background-color: var(--color-main);
+    height: 56px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.header_left,
+.header_right {
+    height: 56px;
+    display: flex;
+    align-items: center; 
+}
+
+.header_left-item {
+    padding: 0 12px 0 12px;
+    align-items: center;
+    height: 100%;
+    display:flex;
+}
+.header_left-icon {
+    padding-right: 4px;
+
+}
+
+.header_right-item {
+    padding: 0 12px 0 12px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+
+}
+.header_left-item:hover,
+.header_left-item:hover .header_left-text,
+.header_right-item:hover .header_right-text,
+.header_right-item:hover {
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.header_left-item:hover a,
+.header_right-item:hover a {
+    cursor: pointer;
+}
+
+.header_right-icon {
+    padding-right: 10px;
+
+}
+
+/* thong bao dang nhap dang ki */
+.slider {
+    margin-top: 80px !important;
+} 
+.notify {
+    background: #F8F8F8;
+    padding: 12px 32px;
+}
+.notify__text {
+display: flex;
+}
+.notify__login {
+    padding: 0 6px;
+    color: var(--color-main);
+}
+.notify__register {
+    color: var(--color-main);
+    padding: 0 6px;
+}
+.notify__login:hover, 
+.notify__register:hover {
+    text-decoration: underline;
+    transition: all 3s ease;
+}
+
+
+/* quang cao  */
+.introduce {
+    margin-top: 52px!important;
+
+}
+.introduce__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.introduce__heading {
+    font-size: 2.2rem;
+
+}
+.introduce__sub {
+    font-size: 1.6rem;
+    opacity: 0.7;
+
+}
+.introduce-img {
+
+
+}
+.introduce-img-item {
+max-width: 100%;
+max-height: 100%;
+
+}
+
+
+ /* danh sach tai khoan */
+.course {
+    margin-top: 100px !important;
+} 
+.course__heading {
+    justify-content: center;
+}
+.course__heading-text{
+    font-size: 1.6rem;
+}
+.course__item{
+    width: 100%;
+    padding-left: 12px;
+}
+.course__header {
+
+}
+
+.course__price{
+    font-size: 20px;
+    color: white;
+   
+    
+}
+
+.course__header--text {
+    text-align: center;
+}
+
+.course__img {
+    width: 90%;
+
+}
+.content-text {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+.buy {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.buy--hover {
+    width: 150px;
+    height: 48px;
+    background-color: var(--color-main);
+    color: #fff;
+    cursor: pointer;
+    font-size:  20px;
+    border-radius: 8px;
+    padding: 0;
+    position: relative;
+
+}
+.buy--hover:hover .buy__btn::after{
+    border-radius: 12px;
+    height: 100%;
+}
+.buy__btn {
+   height: 100%;
+    width: 100%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-main);
+    cursor: pointer;
+    border-radius: 12px;
+}
+.buy--text {
+    color: white;
+    position: absolute;
+    
+}
+.buy__btn::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 100%;
+    background: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.4s linear;
+
+}
+.buy--hover:hover .buy--text{
+    color: white;
+    z-index: 9999;
+}
+
+/* .buy__btn:hover {
+    opacity: 0.8;
+} */
+.user__list {
+    display: none;
+    top: 42px;
+    padding: 0 8px;
+    position: absolute;
+    right:  0;
+    width: 160px;
+    list-style-type: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius:4px;
+    z-index:  998;
+    background-color: white;
+    
+}
+.user__list::after {
+    content: '';
+    height: 12px;
+    background-color: transparent;
+    width: 100%;
+    left: 0;
+    top: -12px;
+    position: absolute;
+
+}
+.header_right-item:hover .user__list {
+    display:block; 
+    color: black !important;
+}
+.user__item {
+    padding: 12px 0;
+}
+.user__item:hover {
+    color: red;
+}
+
+
+.history{
+    margin-top: 72px !important;
+    /* max-width:  1000px !important; */
+}
+.history__heading {
+    justify-content: center;
+}
+.history__heading-text {
+    font-size: 1.6rem;
+}
+.history__list{
+    border: 1px solid black;
+    border-radius: 4px;
+    padding:  4px ;
+
+}
+.history__item {
+    display: block;
+    padding: 12px 8px;
+    
+}
+.history__item-white {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.history__item-main-color {
+    background-color: var(--color-main);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+}
+
+.hisory__text{
+    font-size: 20px;
+}
+.time__buy{
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+.footer {
+    
+    margin-top: 32px;
+
+}
+
+
+.contact__item {
+    display: flex;
+    padding-top: 8px;
+}
+
+.contact__text {
+    margin-left: 12px;
+}
+
+.appear {
+    display: none;
+}
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+   
+}
+.appear__buy {
+background: white;
+border-radius: 12px;
+padding: 32px 128px;
+transition: all 0.5s ease;
+
+}
+.buyitem-select {
+    padding-bottom: 32px;
+    padding-top: 32px;
+    display: flex;
+}
+
+select{
+background: var(--color-main);
+color: white;
+outline: none;
+padding: 4px 16px;
+border: none;
+cursor: pointer;
+
+}
+select option {
+    color: white;
+    outline: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+select:hover option {
+  cursor: pointer;
+
+}
+
+.buyitem-input {
+    padding-bottom: 32px;
+    display: flex;
+
+}
+.buyitem-input-item {
+outline: none;
+}
+.money {
+    padding-bottom: 32px;
+    display: flex;
+
+}
+.total-money {
+
+}
+.total-money-current {
+
+}
+.buyitem-select label,
+.buyitem-input label,
+.total-money
+ {
+     display: block;
+    width: 85px;
+}
+.confirm {
+    padding-bottom: 16px;
+    text-align: center;
+}
+.confirm__btn {
+    cursor: pointer;
+    width: 100%;
+    padding: 12px 64px;
+    border: none;
+    background: var(--color-main);
+    transition: all .3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition:all .3s ease;
+    overflow: hidden;
+
+}
+.confirm__text {
+    color: white;
+    z-index: 999;
+    text-align: center
+}
+.confirm:hover .confirm__btn::after {
+    width: 100%;
+}
+.confirm:hover    .confirm__text {
+    color: white;
+}
+
+.confirm__btn::after {
+    content: "";
+    height: 100%;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background: red;
+    position: absolute;
+    transition: all .3s ease;
+}
+
+.close {
+    text-align: end;
+    
+}
+.close-icon {
+    padding: 12px;
+    font-size: 1.6rem;
+}
+.close-icon:hover {
+    color: var(--color-main);
+    cursor: pointer;
+}
+
+
+
